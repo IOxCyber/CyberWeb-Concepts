@@ -1,9 +1,3 @@
-## [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks):
-- Center for Internet Security. [Download CIS](https://downloads.cisecurity.org/#/)
-- Set of globally recognized and consensus-driven best practices/controls to help security practitioners implement and manage their cybersecurity defenses.
-- Provides a number of security controls for different type of OS (Windows, Linux, MacOs), Network Devices(Cisco, Palo ALto Firewalls)
-- <img width="500" alt="image" src="https://github.com/cybersome/CyberDev/assets/40174034/747733a2-c352-46b7-8533-6383d251009a">
-
 ## [EDR vs Antivirus](https://cybriant.com/antivirus-vs-edr/):
 - `EDR` (Endpoint Detection & Response) or `[behavior-based](https://www.kaspersky.com/enterprise-security/wiki-section/products/behavior-based-protection)`[^1] endpoint protection system.
 - Antivirus programs are more `simplistic and limited in scope` & work upon their DB (detects malware and viruses by `[signature-based](https://www.educative.io/answers/what-is-signature-based-detection)`[^2] detection)
