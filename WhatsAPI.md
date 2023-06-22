@@ -16,7 +16,7 @@
 
 ## REST API:
 - Representational State Transfer.
-- REST defines a set of functions like GET, PUT, DELETE, etc. that clients can use to access server data.
+- REST defines a set of functions like `GET, PUT, DELETE` etc. that clients can use to access server data.
 - Clients and servers exchange data using HTTP.
 - REST API is `statelessness`. Statelessness means that `servers do not save client data between requests`
 
