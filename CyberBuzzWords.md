@@ -1,6 +1,6 @@
 ## [EDR vs Antivirus](https://cybriant.com/antivirus-vs-edr/):
-- `EDR` (Endpoint Detection & Response) or `[behavior-based](https://www.kaspersky.com/enterprise-security/wiki-section/products/behavior-based-protection)`[^1] endpoint protection system.
-- Antivirus programs are more `simplistic and limited in scope` & work upon their DB (detects malware and viruses by `[signature-based](https://www.educative.io/answers/what-is-signature-based-detection)`[^2] detection)
+- `EDR` (Endpoint Detection & Response) or [behavior-based](https://www.kaspersky.com/enterprise-security/wiki-section/products/behavior-based-protection)[^1] endpoint protection system.
+- Antivirus programs are more `simplistic and limited in scope` & work upon their DB (detects malware and viruses by [signature-based](https://www.educative.io/answers/what-is-signature-based-detection)[^2] detection)
 - EDR contains many security tools like Antivirus, firewalls, whitelisting tools, and monitoring tools.
 - EDR agent on the endpoints constantly monitors for changes in behavior that could indicate the presence of malicious software.
 - Examples:
@@ -12,9 +12,6 @@
 1. `Next-Generation Antivirus (NGAV)`: cybersecurity tool that leverages AI, ML & behavioral detection and exploit mitigation to anticipate and prevent both known and unknown threats.
 2. Managed Detection and Response (MDR): Endpoint security “as a service", manages endpoint security technologies for organizations which includes EDR, guided response, managed remediation etc.
 3. Extended Detection and Response (XDR): Extended Detection and Response (XDR) is a consolidation of tools and data that provides extended visibility, analysis, and response across endpoints, workloads, users, and networks.
-
-## 
-
 
 
 
