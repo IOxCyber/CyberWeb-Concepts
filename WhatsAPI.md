@@ -18,8 +18,11 @@
 - Representational State Transfer.
 - Clients and servers exchange data using HTTP methods.
 - REST API is `statelessness`. Statelessness means that `servers do not save client data between requests`
+
+
+## HTTP Methods:
 - REST defines a set of functions like `GET, PUT, DELETE` etc. that clients can use to access server data.
-- The most-commonly-used HTTP methods are [POST, GET, PUT, and DELETE](https://medium.com/@9cv9official/what-are-get-post-put-patch-delete-a-walkthrough-with-javascripts-fetch-api-17be31755d28) which correspond to create, read, update, and delete (or CRUD) operations.
+- The most-commonly-used HTTP methods are `POST, GET, PUT, and DELETE`[more](https://medium.com/@9cv9official/what-are-get-post-put-patch-delete-a-walkthrough-with-javascripts-fetch-api-17be31755d28) which correspond to `create, read, update, and delete (or CRUD) operations.`
 
 
 ## API integrations:
