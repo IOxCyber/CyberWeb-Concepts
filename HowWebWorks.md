@@ -13,5 +13,26 @@
 - `Component files`: eg. Different books for a subject.
     - `Code files: HTML, CSS, and JavaScript.`
     - `Assets`: Collective name for all the other stuff that makes up a website, such as `images, music, video, Word documents, and PDFs.`
+
+3. How Exactly It happens:
+- Step by Step:
+- 1. The browser `connects to the DNS server, and finds the IP` address of the web server.
+  2. The browser `sends an HTTP request message to the server`, asking it to send a copy of the website to the client.
+  3. If the `server approves the client's request`, the server sends the client a "200 OK" message & starts sending the website's files to the browser as a series of small chunks called data packets.
+  4. The `browser assembles the small chunks into a complete web page and displays it.`
+
+
+4. Parsing of Data by Browser:
+- The browser parses the HTML file first (any <link> or <script>)
+- Then, It sends requests back to the server for any CSS files & JavaScript files it has found, then parses the CSS and JavaScript.
+- The browser generates an in-memory DOM tree from the parsed HTML, generates an in-memory CSSOM structure from the parsed CSS.
 - 
+
+
+
+
+
+
+
+
 
