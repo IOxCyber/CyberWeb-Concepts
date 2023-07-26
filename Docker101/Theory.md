@@ -56,6 +56,8 @@
 ## 8. docker namespace: 
 - Linux feature that `ensures OS resources partition` in a mutually exclusive manner.
 - ensure that the containers are portable and they don't affect the underlying host.
+- act as `virtual boundaries that separate the resources of the container` from those of the host system and other containers.
+- Filesystem, its unique IP address and network interfaces, process ID (PID) space, different mounted file systems, shared memory and message queues. 
 - eg. PID, Mount, User, Network, IPC
 
 ## 9. Docker Hub: `default and official repository for Docker images`
