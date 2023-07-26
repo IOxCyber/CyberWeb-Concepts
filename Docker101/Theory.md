@@ -17,12 +17,33 @@
   - `define the configuration of a Docker container`
   - A Textfile specifies the application code, runtime, libraries, environment variables, and other dependencies needed to run the application.
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/a580f605-1017-451d-97e0-ae2cc46b0749">
+```
+Example: Dockerfile
+# Use the official Python image as the base image
+FROM python:3.9
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the application code into the container
+COPY app.py /app/
+
+# Install the required dependencies for the Python application
+RUN pip install Flask
+
+# Expose port 5000 for the Flask web server
+EXPOSE 5000
+
+# Set the entry point command to run the Python application using Flask
+CMD ["python", "app.py"]
+```
 
 ## 2. Docker Containers: `a running instance of a Docker image.`
 - lightweight, standalone, executable package of software.
 - a separate process on your machine that is isolated from all other processes on the host machine.
 - This isolation leverages the host system's kernel namespaces and cgroups.
 - Each container has its own isolated filesystem, network stack, and process space.
+- `a package that contains all the required prerequisites to run an application.`
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/1f418ebd-47b5-4b2a-9534-98de573a3b86">
 
 ## 3. Docker Engine: `Docker Container Management`
@@ -43,7 +64,7 @@
 - performs “build” and “run” operations for the purpose to connect with Docker Host.
 - `allows users to interact with the Docker Daemon and manage Docker objects` like containers, images, volumes, and networks.
 
-## 6. Docker Deamon: `Bg Service/core engine of Docker`
+## 6. Docker Deamon/Server: `Bg Service/core engine of Docker`
 - background `service that runs on the host operating system and manages Docker containers, images`
 - The Docker client and daemon communicate using a REST API.
 - Dockerd is responsible for starting, stopping, and managing containers, as well as pulling and pushing Docker images.
