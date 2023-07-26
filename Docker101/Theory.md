@@ -1,4 +1,4 @@
-## Docker: [More](https://medium.com/@saschagrunert/demystifying-containers-part-i-kernel-space-2c53d6979504)
+## Docker:
 - `Open-source containerization[^1] tool` for developing, shipping and running applications.
 - Docker is `written in the Go` programming language.
 - Docker uses a technology called `namespaces to provide the isolated workspace called the container.`
@@ -75,12 +75,6 @@
 
 2. Hypervisor is a software that makes virtualization happen eg. Virtual Box, VMware:  
 - <img width="502" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/d07adaa6-5502-4b52-9dc2-ae1d6f714911">
-
-
-
-
-
-
 
 [^1]: Containerization: the `process of packaging an application and its dependencies, runtime libraries`, and settings into a single standardized unit called a container.
 A containerization is a form of virtualization through which applications are run in containers (isolated user spaces) all using a shared OS.
