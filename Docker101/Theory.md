@@ -93,11 +93,17 @@ CMD ["python", "app.py"]
 - containerization technology makes it easier to scale applications and manage resources efficiently.
 
 ## Interview Questions:
- Docker VS Virtual Machines
+1. Docker VS Virtual Machines
 - <img width="519" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/638e54e7-ef0c-4c4e-8f8c-be844d530493">
 
-2. Hypervisor is a software that makes virtualization happen eg. Virtual Box, VMware:  
+2. `Hypervisor` is a software that makes virtualization happen eg. Virtual Box, VMware:  
 - <img width="502" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/d07adaa6-5502-4b52-9dc2-ae1d6f714911">
+
+3. `Docker Swarm`
+- Container orchestration tool provided by Docker, Inc.
+- Allows you to `create and manage a cluster of Docker nodes` (machines) to deploy, scale, and manage containerized applications at scale.
+- Provides built-in load balancing for services, distributing incoming traffic across all containers running the service.
+- Kubernetes (another container orchestration platform), some users have transitioned to Kubernetes for more complex container orchestration requirements.
 
 [^1]: Containerization: the `process of packaging an application and its dependencies, runtime libraries`, and settings into a single standardized unit called a container.
 A containerization is a form of virtualization through which applications are run in containers (isolated user spaces) all using a shared OS.
