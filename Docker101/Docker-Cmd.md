@@ -42,6 +42,11 @@ TAG: Latest or anything, just for tagging the image
 > Note: The docker build command assumes a default filename of Dockerfile if you don't specify a different filename. So, if your Dockerfile is named Dockerfile in the current directory, you don't need to explicitly mention the filename. If your Dockerfile has a different name, you can specify it using the -f option: docker build -t IMAGE_NAME:TAG -f CustomDockerfile .
 
 ### 5. Clean Up Commands:
+- `docker stop/start/restart/rm CONTAINER_ID`: stop/start/restart/remove a running container by its ID.
+
+- `docker rmi image_id_or_name`:	Remove a Docker image from the local system. (Make sure to `stop and remove the associated container`)
+> docker stop CONTAINER_ID >> docker rm CONTAINER_ID >> docker image rm IMAGE_ID
+
 - `docker image prune [OPTIONS]`: used to remove unused or dangling Docker images
 ```
 Options:
@@ -49,10 +54,6 @@ Options:
 ```
 > Note: Dangling Docker images refer to images that have no associated containers and are not tagged with any name. These images are typically created during the build process or when intermediate layers are produced. Since they have no explicit name or tag, they are considered "dangling" or untagged.
 
-- `docker rmi image_id_or_name`:	Remove a Docker image from the local system. (Make sure to `stop and remove the associated container`)
-> docker stop CONTAINER_ID >> docker rm CONTAINER_ID >> docker image rm IMAGE_ID
-
-- `docker stop/start/restart/rm CONTAINER_ID`: stop/start/restart/remove a running container by its ID. 
 - `docker swarm leave`:	Leaves a swarm
 - `docker kill $(docker ps -q)`:	Stops all running containers
 
