@@ -14,6 +14,8 @@
 - `docker push`: Push an image or a repository to a registry. eg. `$ docker image push dockerimage`
 - `docker update`:	Update the configuration of one or more containers. eg. `docker update --cpus 2 --memory 512m <container_id>`
 - `docker exec`: To run a command inside a running Docker container. eg. `docker exec -it my_container bash` (-it: enter an interactive terminal inside the container & Use BASH shell)
+> Note: By default, the docker containers will exit immediately if you do not have any task running on the container. (echo > Exit)
+> To keep the container running in the background, try to run it with --interactive (or -i) argument or --tty (or -t) or -it directly
 
 ### 4. Container Build/Run Commands:
 - `docker run (options) image (command) (arg...)`: used to create and start a new Docker container from provided images.
