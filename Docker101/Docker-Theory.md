@@ -2,7 +2,6 @@
 - Open-source containerization[^1] tool for developing, shipping, and running applications.
 - `Platform as a service products` that `use OS-level virtualization` to deliver software in packages called containers.
 - `Written in the Go`, uses a technology called `namespaces to provide the isolated workspace called the container.`
-- <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/f607d639-6fcb-4557-abaf-a2d9beab7c19">
 
 ## Architecture:
 - Docker uses a client-server architecture & Docker Client uses REST-API to communicate with Docker Deamon.
@@ -89,6 +88,8 @@ CMD ["python", "app.py"]
 - including improved security through container isolation, faster deployment times due to the lightweight nature of containers
 - consistency across different environments, ensuring that applications run consistently across development, testing, and production environments.
 - containerization technology makes it easier to scale applications and manage resources efficiently.
+
+- <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/f607d639-6fcb-4557-abaf-a2d9beab7c19">
 
 ## Interview Questions:
 1. Docker VS Virtual Machines
