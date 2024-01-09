@@ -2,21 +2,32 @@
 - <img width="498" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/2d675895-dc22-4919-bc3f-0b863097fda9">
 
 ## 2. Basic Cmds: [Official Guide](https://docs.docker.com/guides/get-started/)
-### Build Commands:
+### Info Commands:
 - `docker ps`: List all containers (including stopped ones) on your system. eg. `docker ps -a`
 - `docker version`:	Show the Docker version information. eg. `docker --version [OPTIONS]`
 - `docker info`: Display system-wide information about Docker Image, Configuration, Containers, etc.
-- `docker images`: Displays all the available downloaded docker Images on the system. 
+- `docker images`: Displays all the available downloaded docker Images on the system.
+- `docker logs CONTAINER_ID`: View the logs of a running or stopped container.
 - `docker build`: Builds an image from a Dockerfile in the current directory. `eg. docker build -t IMAGE_NAME:TAG(eg. my-python-app) Dockerfile_Path`
 
 ### Container Interaction Commands:
 - `docker search <Image-Name>`: Search the Image-Name in the Docker Registry.
 - `docker pull`: Pull an image or a repository from a registry. eg. `docker pull ubuntu:latest`
-- `docker run (options) image (command) (arg...)`: to create containers from provided images.
+- `docker run (options) image (command) (arg...)`: used to create and start a new Docker container from provided images.
+```
+eg. docker run -d -p 8080:80 --name web_app -v /path/on/host:/app/data web_app_image:latest
+
+Options:
+-d: Runs the container in the background (detached mode).
+-p 8080:80: Maps port 8080 on the host to port 80 on the container.
+--name web_app: Assigns the name "web_app" to the container.
+-v /path/on/host:/app/data: Mounts the host directory **/path/on/host** into the container at **/app/data.**
+web_app_image:latest: Specifies the Docker image "web_app_image" with the tag "latest" to create the container.
+```
 - `docker push`: Push an image or a repository to a registry. eg. `$ docker image push dockerimage`
-- `docker update`:	Update the configuration of one or more containers. eg. `docker update --cpus 2 --memory 512m container_id`
+- `docker update`:	Update the configuration of one or more containers. eg. `docker update --cpus 2 --memory 512m <container_id>`
 - `docker exec`: To run a command inside a running Docker container. eg. `docker exec -it my_container bash` (-it: enter an interactive terminal inside the container & Use BASH shell)
-- `docker logs CONTAINER_ID`: View the logs of a running or stopped container.
+
 
 ### Clean Up Commands:
 - `docker image prune`:	Clears an unused image.
