@@ -40,31 +40,31 @@ CMD ["python", "app.py"]
 - a separate process on your machine that is isolated from all other processes on the host machine.
 - This isolation leverages the host system's kernel namespaces and cgroups.
 - Each container has its own isolated filesystem, network stack, and process space.
-- `a package that contains all the required prerequisites to run an application.`
+- `package that contains all the required prerequisites to run an application.`
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/1f418ebd-47b5-4b2a-9534-98de573a3b86">
 
-## 3. Docker Engine: `Docker Container Management`
+## 3. Docker Engine or Docker Server: `Docker Container Management` `core engine of Docker`
 - `Manages containers, used for building, running, and distributing Docker images.`
 - `runs as a daemon on the host system` and provides a `command-line interface (CLI) and a REST API` for interacting with containers and images.
 
-## 4. Docker Registry: `Docker Image Store`
-- a `centralized repository for storing Docker images.`
-- `Docker Hub is the default public registry` provided by Docker, containing a vast collection of pre-built images.
-
-## 5. Docker Host & Client:
-### Docker Host: 
-- refers to the `physical or virtual machine where Docker is installed and runs.`
-- runs the Docker Daemon (Dockerd)
-
-### Docker Client: `CLI tool`
-- AKA Docker CLI (Command-Line Interface) is a command-line tool.
-- performs “build” and “run” operations for the purpose to connect with Docker Host.
-- `allows users to interact with the Docker Daemon and manage Docker objects` like containers, images, volumes, and networks.
-
-## 6. Docker Deamon/Server: `Background Service/core engine of Docker`
+## 4. Docker Deamon: `Background Service`
 - background `service that runs on the host operating system and manages Docker containers, images`
 - The Docker client and daemon communicate using a REST API.
 - Dockerd is responsible for starting, stopping, and managing containers, as well as pulling and pushing Docker images.
+
+## 5. Docker Host & Client:
+### Docker Host: `where Docker is installed`
+- Refers to the `physical or virtual machine where Docker is installed and runs.`
+- Runs the Docker Daemon (Dockerd)
+
+### Docker Client: `CLI tool`
+- AKA Docker CLI (Command-Line Interface) is a command-line tool.
+- Performs “build” and “run” operations to connect with Docker Host.
+- `allows users to interact with the Docker Daemon and manage Docker objects` like containers, images, volumes, and networks.
+
+## 6. Docker Registry: `Docker Image Store`
+- a `centralized repository for storing Docker images.`
+- `Docker Hub is the default public registry` provided by Docker, containing a vast collection of pre-built images.
 
 ## 7. Docker Compose: `Used to set up the Docker-based app`
 - YAML file to specify the services, networks, and volumes needed for your application.
@@ -105,4 +105,4 @@ CMD ["python", "app.py"]
 - Kubernetes (another container orchestration platform), some users have transitioned to Kubernetes for more complex container orchestration requirements.
 
 [^1]: Containerization: the `process of packaging an application and its dependencies, runtime libraries`, and settings into a single standardized unit called a container.
-A containerization is a form of virtualization through which applications are run in containers (isolated user spaces) all using a shared OS.
+Containerization is a form of virtualization through which applications are run in containers (isolated user spaces) all using a shared OS.
