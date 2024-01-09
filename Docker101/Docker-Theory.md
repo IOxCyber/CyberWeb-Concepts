@@ -37,7 +37,7 @@ CMD ["python", "app.py"]
 
 ## 2. Docker Containers: `running instance of a Docker image.`
 - lightweight, standalone, executable package of software.
-- a separate process on your machine that is isolated from all other processes on the host machine.
+- a separate process on your local machine that is isolated from all other processes on the host machine.
 - This isolation leverages the host system's kernel namespaces and cgroups.
 - Each container has its own isolated filesystem, network stack, and process space.
 - `package that contains all the required prerequisites to run an application.`
