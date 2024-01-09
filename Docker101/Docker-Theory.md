@@ -92,7 +92,7 @@ CMD ["python", "app.py"]
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/f607d639-6fcb-4557-abaf-a2d9beab7c19">
 
 ## Interview Questions:
-1. Docker VS Virtual Machines
+1. Docker VS Virtual Machines: Problem with VMs > Resource Intensive, Slow to start
 - <img width="519" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/638e54e7-ef0c-4c4e-8f8c-be844d530493">
 
 2. `Hypervisor` is a software that makes virtualization happen eg. Virtual Box, VMware:  
