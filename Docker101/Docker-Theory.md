@@ -1,8 +1,7 @@
 ## Docker: [Cheatsheet](https://dockerlabs.collabnix.com/docker/cheatsheet/)
 - Open-source containerization[^1] tool for developing, shipping, and running applications.
-- Docker is `written in the Go` programming language.
-- Docker uses a technology called `namespaces to provide the isolated workspace called the container.`
 - `Platform as a service products` that `use OS-level virtualization` to deliver software in packages called containers.
+- `Written in the Go`, uses a technology called `namespaces to provide the isolated workspace called the container.`
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/f607d639-6fcb-4557-abaf-a2d9beab7c19">
 
 ## Architecture:
