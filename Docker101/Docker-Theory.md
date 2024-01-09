@@ -62,7 +62,7 @@ CMD ["python", "app.py"]
 - Performs “build” and “run” operations to connect with Docker Host.
 - `allows users to interact with the Docker Daemon and manage Docker objects` like containers, images, volumes, and networks.
 
-## 6. Docker Registry: `Docker Image Store`
+## 6. Docker Registry: `Docker Image Store` (Docker-Hub Registry)[https://hub.docker.com/]
 - a `centralized repository for storing Docker images.`
 - `Docker Hub is the default public registry` provided by Docker, containing a vast collection of pre-built images.
 
