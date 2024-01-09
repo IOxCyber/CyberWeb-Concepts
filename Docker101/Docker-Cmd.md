@@ -8,14 +8,14 @@
 - `docker images`: Displays all the available downloaded docker Images on the system.
 - `docker logs CONTAINER_ID`: View the logs of a running or stopped container.
 
-### Container Interaction Commands:
+### 3. Container Interaction Commands:
 - `docker search <Image-Name>`: Search the Image-Name in the Docker Registry.
 - `docker pull`: Pull an image or a repository from a registry. eg. `docker pull ubuntu:latest`
 - `docker push`: Push an image or a repository to a registry. eg. `$ docker image push dockerimage`
 - `docker update`:	Update the configuration of one or more containers. eg. `docker update --cpus 2 --memory 512m <container_id>`
 - `docker exec`: To run a command inside a running Docker container. eg. `docker exec -it my_container bash` (-it: enter an interactive terminal inside the container & Use BASH shell)
 
-### Container Build/Run Commands:
+### 4. Container Build/Run Commands:
 - `docker run (options) image (command) (arg...)`: used to create and start a new Docker container from provided images.
 ```
 eg. docker run -d -p 8080:80 --name web_app -v /path/on/host:/app/data web_app_image:latest
@@ -30,19 +30,24 @@ web_app_image:latest: Specifies the Docker image "web_app_image" with the tag "l
 
 - `docker build`: Initiates the process of building a Docker image from a Dockerfile (Need a configured Dockerfile to build an image)
 ```
-eg. docker build -t IMAGE_NAME:TAG Dockerfile_Path`
+Syntex: docker build -t IMAGE_NAME:TAG Dockerfile_Path`
 
 Example: docker build -t my-node-app:Latest . (here it's current Directory_Path)
-IMAGE_NAME: Name of the Image which will be build from Dockerfile
+
+IMAGE_NAME: Name of the Image which will be built from Dockerfile
 TAG: Latest or anything, just for tagging the image
--t hello-docker: Assigns the name "hello-docker" as the tag for the built image.
+-t my-node-app:Latest : Assigns the name "my-node-app" & "Latest" tag for the built image.
 .(Dot): Specifies the Dockerfile Location, indicating that the Dockerfile is in the current directory.
 ```
+> Note: The docker build command assumes a default filename of Dockerfile if you don't specify a different filename. So, if your Dockerfile is named Dockerfile in the current directory, you don't need to explicitly mention the filename. If your Dockerfile has a different name, you can specify it using the -f option: docker build -t IMAGE_NAME:TAG -f CustomDockerfile .
 
-
-### Clean Up Commands:
+### 5. Clean Up Commands:
 - `docker image prune [OPTIONS]`: used to remove unused or dangling Docker images
-> -a, --all: Remove all unused images, not just dangling ones, AND -f, --force: Do not prompt for confirmation.
+```
+Options:
+-a, --all: Remove all unused images, not just dangling ones, AND -f, --force: Do not prompt for confirmation.
+```
+> Note: Dangling Docker images refer to images that have no associated containers and are not tagged with any name. These images are typically created during the build process or when intermediate layers are produced. Since they have no explicit name or tag, they are considered "dangling" or untagged.
 
 - `docker rmi image_id_or_name`:	Remove a Docker image from the local system. (Make sure to `stop and remove the associated container`)
 > docker stop CONTAINER_ID >> docker rm CONTAINER_ID >> docker image rm IMAGE_ID
@@ -51,5 +56,5 @@ TAG: Latest or anything, just for tagging the image
 - `docker swarm leave`:	Leaves a swarm
 - `docker kill $(docker ps -q)`:	Stops all running containers
 
-### Registry Commands:
+### 6. Registry Commands:
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/f7f44782-d3ab-4786-bc19-e9bf0c19471f">
