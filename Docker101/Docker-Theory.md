@@ -1,5 +1,5 @@
 ## Docker: [Cheatsheet](https://dockerlabs.collabnix.com/docker/cheatsheet/)
-- `Open-source containerization[^1] tool` for developing, shipping and running applications.
+- Open-source containerization[^1] tool for developing, shipping, and running applications.
 - Docker is `written in the Go` programming language.
 - Docker uses a technology called `namespaces to provide the isolated workspace called the container.`
 - `Platform as a service products` that `use OS-level virtualization` to deliver software in packages called containers.
@@ -10,8 +10,7 @@
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/20493b86-e341-4157-a93b-1c743d1e8ead">
 
 ### Components:
-## 1. Docker Images: `like recipe book`
-- `a read-only template used to create containers.`
+## 1. Docker Images: `read-only template used to create containers.`
 - `built based on a Dockerfile` (which defines the instructions to create the image) & `stored in Docker Registry.`
 - Dockerfile:
   - `define the configuration of a Docker container`
@@ -38,7 +37,7 @@ EXPOSE 5000
 CMD ["python", "app.py"]
 ```
 
-## 2. Docker Containers: `a running instance of a Docker image.`
+## 2. Docker Containers: `running instance of a Docker image.`
 - lightweight, standalone, executable package of software.
 - a separate process on your machine that is isolated from all other processes on the host machine.
 - This isolation leverages the host system's kernel namespaces and cgroups.
@@ -52,7 +51,7 @@ CMD ["python", "app.py"]
 
 ## 4. Docker Registry: `Docker Image Store`
 - a `centralized repository for storing Docker images.`
-- `Docker Hub is the default public registry provided by Docker`, containing a vast collection of pre-built images.
+- `Docker Hub is the default public registry` provided by Docker, containing a vast collection of pre-built images.
 
 ## 5. Docker Host & Client:
 ### Docker Host: 
@@ -64,7 +63,7 @@ CMD ["python", "app.py"]
 - performs “build” and “run” operations for the purpose to connect with Docker Host.
 - `allows users to interact with the Docker Daemon and manage Docker objects` like containers, images, volumes, and networks.
 
-## 6. Docker Deamon/Server: `Bg Service/core engine of Docker`
+## 6. Docker Deamon/Server: `Background Service/core engine of Docker`
 - background `service that runs on the host operating system and manages Docker containers, images`
 - The Docker client and daemon communicate using a REST API.
 - Dockerd is responsible for starting, stopping, and managing containers, as well as pulling and pushing Docker images.
