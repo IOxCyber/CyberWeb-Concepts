@@ -1,17 +1,21 @@
 ## 1. Docker CMD Cheatsheet: [More](https://www.hostinger.in/tutorials/docker-cheat-sheet?ppc_campaign=google_search_generic_hosting_all&bidkw=defaultkeyword&lo=9062084&gclid=Cj0KCQjwiIOmBhDjARIsAP6YhSWZqeUH50uOmMi2B7_78afHw_bQ0jBjWj9pfZgDoRwvnuZJ0Ca6grQaApuBEALw_wcB#Docker_Architecture)
 
 ## 2. Basic Cmds: [Official Guide](https://docs.docker.com/guides/get-started/)
-### Info Commands:
+### Info Level Commands:
 - `docker ps`: List all containers (including stopped ones) on your system. eg. `docker ps -a`
 - `docker version`:	Show the Docker version information. eg. `docker --version [OPTIONS]`
 - `docker info`: Display system-wide information about Docker Image, Configuration, Containers, etc.
 - `docker images`: Displays all the available downloaded docker Images on the system.
 - `docker logs CONTAINER_ID`: View the logs of a running or stopped container.
-- `docker build`: Builds an image from a Dockerfile in the current directory. `eg. docker build -t IMAGE_NAME:TAG(eg. my-python-app) Dockerfile_Path`
 
 ### Container Interaction Commands:
 - `docker search <Image-Name>`: Search the Image-Name in the Docker Registry.
 - `docker pull`: Pull an image or a repository from a registry. eg. `docker pull ubuntu:latest`
+- `docker push`: Push an image or a repository to a registry. eg. `$ docker image push dockerimage`
+- `docker update`:	Update the configuration of one or more containers. eg. `docker update --cpus 2 --memory 512m <container_id>`
+- `docker exec`: To run a command inside a running Docker container. eg. `docker exec -it my_container bash` (-it: enter an interactive terminal inside the container & Use BASH shell)
+
+### Container Build/Run Commands:
 - `docker run (options) image (command) (arg...)`: used to create and start a new Docker container from provided images.
 ```
 eg. docker run -d -p 8080:80 --name web_app -v /path/on/host:/app/data web_app_image:latest
@@ -23,14 +27,26 @@ Options:
 -v /path/on/host:/app/data: Mounts the host directory **/path/on/host** into the container at **/app/data.**
 web_app_image:latest: Specifies the Docker image "web_app_image" with the tag "latest" to create the container.
 ```
-- `docker push`: Push an image or a repository to a registry. eg. `$ docker image push dockerimage`
-- `docker update`:	Update the configuration of one or more containers. eg. `docker update --cpus 2 --memory 512m <container_id>`
-- `docker exec`: To run a command inside a running Docker container. eg. `docker exec -it my_container bash` (-it: enter an interactive terminal inside the container & Use BASH shell)
+
+- `docker build`: Initiates the process of building a Docker image from a Dockerfile (Need a configured Dockerfile to build an image)
+```
+eg. docker build -t IMAGE_NAME:TAG Dockerfile_Path`
+
+Example: docker build -t my-node-app:Latest . (here it's current Directory_Path)
+IMAGE_NAME: Name of the Image which will be build from Dockerfile
+TAG: Latest or anything, just for tagging the image
+-t hello-docker: Assigns the name "hello-docker" as the tag for the built image.
+.(Dot): Specifies the Dockerfile Location, indicating that the Dockerfile is in the current directory.
+```
 
 
 ### Clean Up Commands:
-- `docker image prune`:	Clears an unused image.
-- `docker rmi image_id_or_name`:	Remove a Docker image from the local system.
+- `docker image prune [OPTIONS]`: used to remove unused or dangling Docker images
+> -a, --all: Remove all unused images, not just dangling ones, AND -f, --force: Do not prompt for confirmation.
+
+- `docker rmi image_id_or_name`:	Remove a Docker image from the local system. (Make sure to `stop and remove the associated container`)
+> docker stop CONTAINER_ID >> docker rm CONTAINER_ID >> docker image rm IMAGE_ID
+
 - `docker stop/start/restart/rm CONTAINER_ID`: stop/start/restart/remove a running container by its ID. 
 - `docker swarm leave`:	Leaves a swarm
 - `docker kill $(docker ps -q)`:	Stops all running containers
