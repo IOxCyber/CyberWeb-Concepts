@@ -57,7 +57,7 @@ CMD ["python", "app.py"]
 - Refers to the `physical or virtual machine where Docker is installed and runs.`
 - Runs the Docker Daemon (Dockerd)
 
-### Docker Client: `CLI tool`
+### Docker Client: `CLI tool to perform action`
 - AKA Docker CLI (Command-Line Interface) is a command-line tool.
 - Performs “build” and “run” operations to connect with Docker Host.
 - `allows users to interact with the Docker Daemon and manage Docker objects` like containers, images, volumes, and networks.
@@ -71,7 +71,7 @@ CMD ["python", "app.py"]
 - With Docker Compose, you can start, stop, and scale all the services.
 - Can be used JSON file.
 
-## 8. docker namespace: 
+## 8. docker namespace: `ensures OS resources partition`
 - Linux feature that `ensures OS resources partition` in a mutually exclusive manner.
 - ensure that the containers are portable and they don't affect the underlying host.
 - act as `virtual boundaries that separate the resources of the container` from those of the host system and other containers.
