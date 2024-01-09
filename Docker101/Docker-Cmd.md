@@ -1,5 +1,4 @@
 ## 1. Docker CMD Cheatsheet: [More](https://www.hostinger.in/tutorials/docker-cheat-sheet?ppc_campaign=google_search_generic_hosting_all&bidkw=defaultkeyword&lo=9062084&gclid=Cj0KCQjwiIOmBhDjARIsAP6YhSWZqeUH50uOmMi2B7_78afHw_bQ0jBjWj9pfZgDoRwvnuZJ0Ca6grQaApuBEALw_wcB#Docker_Architecture)
-- <img width="498" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/2d675895-dc22-4919-bc3f-0b863097fda9">
 
 ## 2. Basic Cmds: [Official Guide](https://docs.docker.com/guides/get-started/)
 ### Info Commands:
