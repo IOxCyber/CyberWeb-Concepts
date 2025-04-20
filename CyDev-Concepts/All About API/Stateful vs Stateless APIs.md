@@ -54,3 +54,5 @@ Cookie: session_id=abc123
 4. Stateful APIs are useful when **context matters**, like real-time games, chat, or financial transactions.
 
 ---
+
+> TL;DR: Stateless is "talk-and-go", Stateful is "let’s stay on the line".
