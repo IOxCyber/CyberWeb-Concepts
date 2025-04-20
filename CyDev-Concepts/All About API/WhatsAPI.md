@@ -9,16 +9,20 @@
   3. The weather app on your phone “interact” to this system via APIs and shows you daily weather updates on your phone.
 
 ## Types:
-- RPC[^2] (client completes a function on the server, and the server sends the output back to the client.)
-- SOAP (Client and server exchange messages using XML)
-- Websocket[^3] (JSON objects to pass data, supports two-way communication)
-- REST (The server uses this client input/Data to start internal functions and returns output data back to the client)
+- REST (The server uses this client input/Data to start internal functions and returns output data back to the client.)
+- GraphQL (Client queries exactly what it needs; server responds with precise data — reducing over-fetching.)
+- SOAP (Client and server exchange messages using XML.)
 
-## REST API:
-- Representational State Transfer.
-- Clients and servers exchange data using HTTP methods.
-- REST API is `statelessness`. Statelessness means that `servers do not save client data between requests`
+- RPC[^2] (Client completes a function on the server, and the server sends the output back to the client.)
+- gRPC (High-performance framework using Protocol Buffers for communication over HTTP/2 — ideal for microservices.)
+- JSON-RPC (Remote Procedure Call protocol encoded in JSON — less verbose than XML-based SOAP.)
+- Webhooks (Server-side triggered calls to a client’s HTTP endpoint when an event occurs.)
+- WebSocket[^3] (JSON objects to pass data, supports two-way communication.)
 
+## Core Cencept:
+> Stateless | Every request is independent. Server doesn’t remember past requests.
+>
+> Stateful | Server remembers client data across multiple requests.
 
 ## HTTP Methods:
 - REST defines a set of functions like `GET, PUT, DELETE` etc. that clients can use to access server data.
