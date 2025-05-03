@@ -7,11 +7,9 @@
 - Docker uses a client-server architecture & Docker Client uses REST-API to communicate with Docker Deamon.
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/20493b86-e341-4157-a93b-1c743d1e8ead">
 
-### Components:
-## 1. Docker Images: `read-only template used to create containers.`
-- `built based on a Dockerfile` (which defines the instructions to create the image) & `stored in Docker Registry.`
-- Dockerfile:
-  - `define the configuration of a Docker container`
+# Components:
+
+## 0. Dockerfile: `A blueprint to define the configuration of a Docker container`
   - A Textfile specifies the application code, runtime, libraries, environment variables, and other dependencies needed to run the application.
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/a580f605-1017-451d-97e0-ae2cc46b0749">
 ```
@@ -35,7 +33,12 @@ EXPOSE 5000
 CMD ["python", "app.py"]
 ```
 
-## 2. Docker Containers: `running instance of a Docker image.`
+
+## 1. Docker Images: `read-only template used to create containers.`
+- `built based on a Dockerfile` (which defines the instructions to create the image) & `stored in Docker Registry.`
+
+
+# 2. Docker Containers: `running instance of a Docker image.`
 - lightweight, standalone, executable package of software.
 - a separate process on your local machine that is isolated from all other processes on the host machine.
 - This isolation leverages the host system's kernel namespaces and cgroups.
@@ -43,21 +46,22 @@ CMD ["python", "app.py"]
 - `package that contains all the required prerequisites to run an application.`
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/1f418ebd-47b5-4b2a-9534-98de573a3b86">
 
-## 3. Docker Engine or Docker Server: `Docker Container Management` `core engine of Docker`
+# 3. Docker Engine or Docker Server: `Docker Container Management` `core engine of Docker`
 - `Manages containers, used for building, running, and distributing Docker images.`
 - `runs as a daemon on the host system` and provides a `command-line interface (CLI) and a REST API` for interacting with containers and images.
 
-## 4. Docker Deamon: `Background Service`
+# 4. Docker Deamon: `Background Service: dockerd`
 - background `service that runs on the host operating system and manages Docker containers, images`
 - The Docker client and daemon communicate using a REST API.
 - Dockerd is responsible for starting, stopping, and managing containers, as well as pulling and pushing Docker images.
 
-## 5. Docker Host & Client:
-### Docker Host: `where Docker is installed`
+
+# 5. Docker Host & Client:
+## Docker Host: `where Docker is installed`
 - Refers to the `physical or virtual machine where Docker is installed and runs.`
 - Runs the Docker Daemon (Dockerd)
 
-### Docker Client: `CLI tool to perform action`
+## Docker Client: `CLI tool to perform action`
 - AKA Docker CLI (Command-Line Interface) is a command-line tool.
 - Performs “build” and “run” operations to connect with Docker Host.
 - `allows users to interact with the Docker Daemon and manage Docker objects` like containers, images, volumes, and networks.
