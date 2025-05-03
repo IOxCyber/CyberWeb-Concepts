@@ -37,7 +37,6 @@ CMD ["python", "app.py"]
 ## 1. Docker Images: `read-only template used to create containers.`
 - `built based on a Dockerfile` (which defines the instructions to create the image) & `stored in Docker Registry.`
 
-
 # 2. Docker Containers: `running instance of a Docker image.`
 - lightweight, standalone, executable package of software.
 - a separate process on your local machine that is isolated from all other processes on the host machine.
@@ -66,9 +65,30 @@ CMD ["python", "app.py"]
 - Performs “build” and “run” operations to connect with Docker Host.
 - `allows users to interact with the Docker Daemon and manage Docker objects` like containers, images, volumes, and networks.
 
-## 6. Docker Registry: `Docker Image Store` (Docker-Hub Registry)[https://hub.docker.com/]
-- a `centralized repository for storing Docker images.`
-- `Docker Hub is the default public registry` provided by Docker, containing a vast collection of pre-built images.
+## 6. Docker Compose: 
+- A tool that lets you define and manage multi-container Docker applications using a single YAML file.
+- All run together like a single, connected app, in one virtual network, defined in one YAML file.
+- `docker-compose up -d`
+
+```
+version: '3.8'
+
+services:
+  dvwa:
+    image: vulnerables/web-dvwa
+    ports:
+      - "8080:80"
+  
+  metasploitable:
+    image: tleemcjr/metasploitable2
+    ports:
+      - "8888:80"
+  
+  juice:
+    image: bkimminich/juice-shop
+    ports:
+      - "3000:3000"
+```
 
 ## 7. Docker Compose: `Used to set up the Docker-based app`
 - YAML file to specify the services, networks, and volumes needed for your application.
@@ -84,6 +104,10 @@ CMD ["python", "app.py"]
 
 ## 9. Docker Hub: `default and official repository for Docker images`
 - a public cloud-based registry provided by Docker for storing public images of the containers.
+
+## 10. Docker Registry: `Docker Image Store` (Docker-Hub Registry)[https://hub.docker.com/]
+- a `centralized repository for storing Docker images.`
+- `Docker Hub is the default public registry` provided by Docker, containing a vast collection of pre-built images.
 
 ## Docker Lifecycle:
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/430f951a-8c90-41fb-be4c-cd08769de2b8">
