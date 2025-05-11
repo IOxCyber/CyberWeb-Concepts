@@ -10,7 +10,7 @@
 # Components:
 
 ## 0. Dockerfile: `A blueprint to define the configuration of a Docker container`
-  - A Textfile specifies the application code, runtime, libraries, environment variables, and other dependencies needed to run the application.
+  - A Textfile specifies the application code, runtime(Interpreter for the code), libraries, environment variables, and other dependencies needed to run the application.
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/a580f605-1017-451d-97e0-ae2cc46b0749">
 ```
 Example: Dockerfile
@@ -95,10 +95,10 @@ services:
 - With Docker Compose, you can start, stop, and scale all the services.
 - Can be used JSON file.
 
-## 8. docker namespace: `ensures OS resources partition`
+## 8. docker namespace: `Isolate the process from host kernel`
 - Linux feature that `ensures OS resources partition` in a mutually exclusive manner.
 - ensure that the containers are portable and they don't affect the underlying host.
-- act as `virtual boundaries that separate the resources of the container` from those of the host system and other containers.
+- act as `virtual boundaries that separate/isolate the resources/processes of the container` from those of the host system and other containers.
 - Filesystem, its unique IP address and network interfaces, process ID (PID) space, different mounted file systems, shared memory and message queues. 
 - eg. PID, Mount, User, Network, IPC
 
@@ -108,6 +108,10 @@ services:
 ## 10. Docker Registry: `Docker Image Store` (Docker-Hub Registry)[https://hub.docker.com/]
 - a `centralized repository for storing Docker images.`
 - `Docker Hub is the default public registry` provided by Docker, containing a vast collection of pre-built images.
+
+
+## 11. Docker Volume:
+- A persistent storage mechanism that exists outside the container's lifecycle, used to store and share data between containers and the host system.
 
 ## Docker Lifecycle:
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/430f951a-8c90-41fb-be4c-cd08769de2b8">
