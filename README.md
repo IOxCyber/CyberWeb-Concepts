@@ -3,7 +3,7 @@ About the Software development concepts useful in Cyber Sec.
 
 ## A1 Concepts:
 - How Web Works [Info](https://github.com/IOxCyber/CyberDev-Concepts/blob/main/CyDev-Concepts/HowWebWorks.md)
-- HTTP-Indepth [Info](https://github.com/IOxCyber/CyberEssentials/blob/main/Network_101/Protocols-Related/HTTP-in-Depth.md)
+- HTTP-Indepth,Headers [Info](https://github.com/IOxCyber/CyberEssentials/blob/main/Network_101/Protocols-Related)
 
 - Natting-Encoding [Here](https://github.com/IOxCyber/CyberDev-Concepts/blob/main/CyberBuzzWords/Encoding-Nat.md)
 - Active-Dir [Info](https://github.com/IOxCyber/CyberDev-Concepts/blob/main/CyberBuzzWords/AD-ActiveDirectory.md)
