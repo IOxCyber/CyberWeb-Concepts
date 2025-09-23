@@ -9,8 +9,14 @@
 
 # Components:
 
-## 0. Dockerfile: `A blueprint to define the configuration of a Docker container`
-  - A Textfile specifies the application code, runtime(Interpreter for the code), libraries, environment variables, and other dependencies needed to run the application.
+## 0: Dockerfile:
+A text file that contains all the commands a user could call on the CLI to assemble an image.
+- Image are `built based on a Dockerfile` (which defines the instructions to create the image).
+
+## 1. Docker Image: 
+- A read only 'blueprint/template to create the containers.'
+- An executable package/snapshot with the application code, runtime(Interpreter to execute the code), libraries, environment variables, and other dependencies needed to run the application.
+
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/a580f605-1017-451d-97e0-ae2cc46b0749">
 ```
 Example: Dockerfile
@@ -32,11 +38,6 @@ EXPOSE 5000
 # Set the entry point command to run the Python application using Flask
 CMD ["python", "app.py"]
 ```
-
-
-## 1. Docker Images: `read-only template used to create containers.`
-- `built based on a Dockerfile` (which defines the instructions to create the image) & `stored in Docker Registry.`
-- Executable Package that includes Environment Variables, A runtime, The Code, Configuration Files and Libraries.
 
 # 2. Docker Containers: `running instance of a Docker image.`
 - lightweight, standalone, executable package of software.
@@ -96,7 +97,7 @@ services:
 - With Docker Compose, you can start, stop, and scale all the services.
 - Can be used JSON file.
 
-## 8. docker namespace: `Isolate the process from host kernel`
+## 8. Docker namespace: `Isolate the process from host kernel`
 - Linux feature that `ensures OS resources partition` in a mutually exclusive manner.
 - ensure that the containers are portable and they don't affect the underlying host.
 - act as `virtual boundaries that separate/isolate the resources/processes of the container` from those of the host system and other containers.
@@ -136,6 +137,14 @@ services:
 - Allows you to `create and manage a cluster of Docker nodes` (machines) to deploy, scale, and manage containerized applications at scale.
 - Provides built-in load balancing for services, distributing incoming traffic across all containers running the service.
 - Kubernetes (another container orchestration platform), some users have transitioned to Kubernetes for more complex container orchestration requirements.
+
+4. Short Information:
+
+Dockerfile = Recipe (instructions to build an image).
+
+Docker Image = Baked dish (ready-to-use package).
+
+Docker Container = Served meal (running instance of the image).
 
 [^1]: Containerization: the `process of packaging an application and its dependencies, runtime libraries`, and settings into a single standardized unit called a container.
 Containerization is a form of virtualization through which applications are run in containers (isolated user spaces) all using a shared OS.
