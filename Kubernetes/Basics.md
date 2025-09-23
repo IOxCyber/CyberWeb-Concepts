@@ -27,8 +27,27 @@ Highly available Key Value store used as Kubernetes backiystore for all cluster 
 
 kube-APIserver:
 API server is a component of the kubernetes control plane.
+Use to manage traffic.
 Front end for the kubernetes control plane.
 
+kube-Scheduler:
+- Control plane component that keep track of newly created Pods with unassigned nodes.
+- Use to select a node for New Unassigned Pods.
+
+kube controller manager:
+Control Plane components that runs controller processes.
+
+Types of Controllers:
+Node Controller: Monitors & respond if nodes goes down.
+Job Controller: Monitors the one off tasks & create Pods to run those tasks to completion.
+EndpointSlice, Service Account Controller etc
+
+kube-proxy:
+Network Proxy that runs on each Node in your cluster.
+Maintains network rules on nodes like allow communication, filtering traffic, forwarding etc.
+
+Container Runtime:
+A component to run, manage, execution and lifecycle of containers within the kubernetes environment.
 
 
 
