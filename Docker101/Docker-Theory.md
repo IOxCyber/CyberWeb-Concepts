@@ -36,6 +36,7 @@ CMD ["python", "app.py"]
 
 ## 1. Docker Images: `read-only template used to create containers.`
 - `built based on a Dockerfile` (which defines the instructions to create the image) & `stored in Docker Registry.`
+- Executable Package that includes Environment Variables, A runtime, The Code, Configuration Files and Libraries.
 
 # 2. Docker Containers: `running instance of a Docker image.`
 - lightweight, standalone, executable package of software.
