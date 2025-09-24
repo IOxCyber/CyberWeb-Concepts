@@ -119,16 +119,19 @@ services:
 
 ## 11. Docker Volume:
 - A persistent storage mechanism that exists outside the container's lifecycle, used to store and share data between containers and the host system.
+- Volumes are stored in /var/lib/docker/volumes/ by default
 
 ## Docker containers advantages:
 - including improved security through container isolation, faster deployment times due to the lightweight nature of containers
 - consistency across different environments, ensuring that applications run consistently across development, testing, and production environments.
 - containerization technology makes it easier to scale applications and manage resources efficiently.
+- Containers are immutable → making deployments predictable & rollback-friendly.
 
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/f607d639-6fcb-4557-abaf-a2d9beab7c19">
 
 ## Interview Questions:
-1. Docker VS Virtual Machines: Problem with VMs > Resource Intensive, Slow to start
+1. Docker VS Virtual Machines: Problem with VMs > Resource Intensive, Slow to start.
+2. VM has its own OS kernel but Docker containers share host kernel.
 - <img width="519" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/638e54e7-ef0c-4c4e-8f8c-be844d530493">
 
 2. `Hypervisor` is a software that makes virtualization happen eg. Virtual Box, VMware:  
