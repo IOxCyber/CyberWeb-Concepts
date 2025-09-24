@@ -13,11 +13,6 @@
 A text file that contains all the commands a user could call on the CLI to assemble an image.
 - Image are `built based on a Dockerfile` (which defines the instructions to create the image).
 
-## 1. Docker Image: 
-- A read only 'blueprint/template to create the containers.'
-- An executable package/snapshot with the application code, runtime(Interpreter to execute the code), libraries, environment variables, and other dependencies needed to run the application.
-
-- <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/a580f605-1017-451d-97e0-ae2cc46b0749">
 ```
 Example: Dockerfile
 # Use the official Python image as the base image
@@ -38,6 +33,12 @@ EXPOSE 5000
 # Set the entry point command to run the Python application using Flask
 CMD ["python", "app.py"]
 ```
+
+## 1. Docker Image: 
+- A read only 'blueprint/template to create the containers.'
+- An executable package/snapshot with the application code, runtime(Interpreter to execute the code), libraries, environment variables, and other dependencies needed to run the application.
+
+- <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/a580f605-1017-451d-97e0-ae2cc46b0749">
 
 # 2. Docker Containers: `running instance of a Docker image.`
 - lightweight, standalone, executable package of software.
