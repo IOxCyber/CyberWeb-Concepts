@@ -61,6 +61,7 @@ CMD ["python", "app.py"]
 - background `service that runs on the host operating system and manages Docker containers, images`
 - The Docker client and daemon communicate using a REST API.
 - Dockerd is responsible for starting, stopping, and managing containers, as well as pulling and pushing Docker images.
+- By default, listens on a Unix socket (/var/run/docker.sock)
 
 
 # 5. Docker Host & Client:
@@ -98,10 +99,8 @@ services:
       - "3000:3000"
 ```
 
-## 7. Docker Compose: `Used to set up the Docker-based app`
-- YAML file to specify the services, networks, and volumes needed for your application.
-- With Docker Compose, you can start, stop, and scale all the services.
-- Can be used JSON file.
+## 7. Docker Lifecycle:
+- <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/430f951a-8c90-41fb-be4c-cd08769de2b8">
 
 ## 8. Docker namespace: `Isolate the process from host kernel`
 - Linux feature that `ensures OS resources partition` in a mutually exclusive manner.
@@ -120,9 +119,6 @@ services:
 
 ## 11. Docker Volume:
 - A persistent storage mechanism that exists outside the container's lifecycle, used to store and share data between containers and the host system.
-
-## Docker Lifecycle:
-- <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/430f951a-8c90-41fb-be4c-cd08769de2b8">
 
 ## Docker containers advantages:
 - including improved security through container isolation, faster deployment times due to the lightweight nature of containers
