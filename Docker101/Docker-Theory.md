@@ -1,7 +1,12 @@
 ## Docker: [Cheatsheet](https://dockerlabs.collabnix.com/docker/cheatsheet/) (Docker Playground)[https://labs.play-with-docker.com/]
 - Open-source containerization[^1] tool for developing, shipping, and running applications.
-- `Platform as a service products` that `use OS-level virtualization` to deliver software in packages called containers.
-- `Written in the Go`, uses a technology called `namespaces to provide the isolated workspace called the container.`
+- Docker `use OS-level/Kernel virtualization` to deliver software in packages called containers.
+- `Written in the Go`, uses a technology called `namespaces, cgroups to provide the isolated workspace called the container.`
+- Work as an enabler for `Platform as a service products.`
+
+## Namespace & Cgroups (Control Groups):
+- Linux Specific (Windows uses either hyperV or LCOW & MacOs archive it thu a Linux VM)
+
 
 ## Architecture:
 - Docker uses a client-server architecture & Docker Client uses REST-API to communicate with Docker Deamon.
