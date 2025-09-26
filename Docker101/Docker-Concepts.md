@@ -3,7 +3,11 @@
 
 - Run Below command at Machine CLI.
 
-eg. docker run -it -p Port_Number(Outside Machine):Port_Number(Container) Img_Name
+> docker run -it -p Port_Number(Outside Machine):Port_Number(Container) Img_Name
+
+eg. docker run -it -p 9000:9000 Img_Name
+
+2. 
 
 
 
