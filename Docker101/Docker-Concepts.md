@@ -7,7 +7,10 @@
 
 eg. docker run -it -p 9000:9000 Img_Name
 
-2. 
+2. Environment Variables:
+Use to set the parameters to Docker App.
 
+eg. docker run -it - PortC:PortVM -e key=value Img_Name
 
+3. 
 
