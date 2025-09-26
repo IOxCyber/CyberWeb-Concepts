@@ -21,19 +21,26 @@ A text file that contains all the commands a user could call on the CLI to assem
 ```
 Example: Dockerfile
 # Use the official Python image as the base image
+# Get it from Docker hub
+
 FROM python:3.9
+
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the application code into the container
+
+# Copy the application code into the container directory
 COPY app.py /app/
 
-# Install the required dependencies for the Python application
+
+# Install the required dependencies for the Python application inside container
 RUN pip install Flask
+
 
 # Expose port 5000 for the Flask web server
 EXPOSE 5000
+
 
 # Set the entry point command to run the Python application using Flask
 CMD ["python", "app.py"]
