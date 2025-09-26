@@ -1,5 +1,5 @@
 ## Docker: [Cheatsheet](https://dockerlabs.collabnix.com/docker/cheatsheet/) [Docker Playground](https://labs.play-with-docker.com/)
-- Open-source containerization[^1] tool for developing, shipping, and running applications.
+- 'Open-source containerization tool'[^1] for developing, shipping, and running applications.
 - Docker `use OS-level/Kernel virtualization` to deliver software in packages called containers.
 - `Written in the Go`, uses a technology called `namespaces, cgroups to provide the isolated workspace called the container.`
 - Work as an enabler for `Platform as a service products.`
