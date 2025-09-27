@@ -52,8 +52,8 @@ CMD ["python", "app.py"]
 
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/a580f605-1017-451d-97e0-ae2cc46b0749">
 
-# 2. Docker Containers: `running instance of a Docker image.`
-- lightweight, standalone, executable package of software.
+# 2. Docker Containers: `lightweight, standalone, executable package of software.`
+- Running instance of a Docker image.
 - a separate process on your local machine that is isolated from all other processes on the host machine.
 - This isolation leverages the host system's kernel namespaces and cgroups.
 - Each container has its own isolated filesystem, network stack, and process space.
