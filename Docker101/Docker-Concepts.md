@@ -43,7 +43,13 @@ COPY package.json package.json
 COPY main.js main.js
 '''
 
-5. 
+5. Docker Compose:
+- `Used to manage multiple Containers` required for a real world Application.
+- Can be used to Run, Remove, Stop multiple containers.
+- Used a docker-compose.yml file.
+- Starts with `version of compose`
+
+
 
 
 
