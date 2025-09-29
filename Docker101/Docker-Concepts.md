@@ -25,6 +25,29 @@ COPY (To copy application code etc)
 ENTRYPOINT (Execute Parameters within it,Whenever the Image get executed)
 
 
+4. Layers Caching:
+- The Docker uses the Cached Data which it used to build the Image for the first time.
+
+- If there is any changes in Code,should be included after installing of all Dependencies, Libraries to run the code in the Dockerfile.
+
+eg. 
+'''
+FROM <Base Image/OS>
+
+//All Dependencies Declared here
+RUN apt update
+RUN apt install -y curl
+
+// Code Copying
+COPY package.json package.json
+COPY main.js main.js
+'''
+
+5. 
+
+
+
+
 
 
 
