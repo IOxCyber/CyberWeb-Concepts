@@ -16,7 +16,16 @@ eg. docker run -it -p 1025:1025 -e key=value Img_Name
 
 
 3. Dockerization of An App:
-Require a file called "Dockerfile" with configuration like Base Image, Dependencies, Libraries etc.
+- Require a file called "Dockerfile" with configuration like Base Image, Dependencies, Libraries etc.
+
+- 
+FROM (To run in a Image)
+RUN (To execute the commands)
+COPY (To copy application code etc)
+ENTRYPOINT (Execute Parameters within it,Whenever the Image get executed)
+
+
+
 
 
 
