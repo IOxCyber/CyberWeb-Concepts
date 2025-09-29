@@ -16,5 +16,7 @@ eg. docker run -it -p 1025:1025 -e key=value Img_Name
 
 
 3. Dockerization of An App:
+Require a file called "Dockerfile" with configuration like Base Image, Dependencies, Libraries etc.
+
 
 
