@@ -123,24 +123,14 @@ services:
 ## 9. Docker Hub: `default and official repository for Docker images`
 - a public cloud-based registry provided by Docker for storing public images of the containers.
 
-## 10. Docker Registry: `Docker Image Store` (Docker-Hub Registry)[https://hub.docker.com/]
+## 10. Docker Registry: `Docker Image Store` [Docker-Hub Registry](https://hub.docker.com)
 - a `centralized repository for storing Docker images.`
 - `Docker Hub is the default public registry` provided by Docker, containing a vast collection of pre-built images.
 
 
 ## 11. Docker Volume:
 - A persistent storage mechanism that exists outside the container's lifecycle, used to store and share data between containers and the host system.
-- Volumes are stored in /var/lib/docker/volumes/ by default
-
-## Docker containers advantages:
-- including improved security through container isolation, faster deployment times due to the lightweight nature of containers
-- consistency across different environments, ensuring that applications run consistently across development, testing, and production environments.
-## Docker: [Cheatsheet](https://dockerlabs.collabnix.com/docker/cheatsheet/) (Docker Playground)[https://labs.play-with-docker.com/]
-- Open-source containerization[^1] tool for developing, shipping, and running applications.
-- Docker `use OS-level/Kernel virtualization` to deliver software in packages called containers.
-- `Written in the Go`, uses a technology called `namespaces, cgroups to provide the isolated workspace called the container.`
-- Work as an enabler for `Platform as a service products.`
-
+- Volumes are stored in /var/lib/docker/volumes/ by default.
 
 
 ## Docker containers advantages:
