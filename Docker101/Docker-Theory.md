@@ -60,9 +60,13 @@ CMD ["python", "app.py"]
 - `package that contains all the required prerequisites to run an application.`
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberDev/assets/40174034/1f418ebd-47b5-4b2a-9534-98de573a3b86">
 
-# 3. Docker Engine or Docker Server: `Docker Container Management` `core engine of Docker`
+# 3. Docker Engine or Docker Server: 
+- To manage the full lifecycle of Docker objects (images, containers, networks, volumes).
 - `Manages containers, used for building, running, and distributing Docker images.`
-- `runs as a daemon on the host system` and provides a `command-line interface (CLI) and a REST API` for interacting with containers and images.
+- Composed of multiple parts:
+`Docker Daemon + REST API + Docker CLI (Client).`
+
+- Eg. Docker Engine(Dockerd, Default engine for Docker Desktop), Containerd (used by Docker/k8), CRI-O (k8 specific) ,LXD (Chronicals) or cloud vendor specific OCI Compatible container images.
 
 # 4. Docker Deamon: `Background Service: dockerd`
 - background `service that runs on the host operating system and manages Docker containers, images`
@@ -76,7 +80,7 @@ CMD ["python", "app.py"]
 - Refers to the `physical or virtual machine where Docker is installed and runs.`
 - Runs the Docker Daemon (Dockerd)
 
-## Docker Client: `CLI tool to perform action`
+## Docker CLI Client: `CLI tool to perform action`
 - AKA Docker CLI (Command-Line Interface) is a command-line tool.
 - Performs “build” and “run” operations to connect with Docker Host.
 - `allows users to interact with the Docker Daemon and manage Docker objects` like containers, images, volumes, and networks.
