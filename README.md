@@ -14,7 +14,7 @@ About the Software development concepts useful in Cyber Sec.
 - Site v Origin & Cookies 101 [Info](https://github.com/IOxCyber/CyberWeb-Concepts/blob/main/CyDev-Concepts/Cookies-Site-Origin.md)
 - All About Session [Info](https://github.com/IOxCyber/CyberWeb-Concepts/tree/main/CyDev-Concepts/All-About-Session)
 - [Http Headers](https://github.com/IOxCyber/Ultimate-Cybersecurity-Guide_UCG/blob/main/Network_101%2FProtocols-Related%2FCommon-Http-Headers-Info.md)
-- [Useful Linux CMDs/Tools: Curl, wget etc](https://github.com/IOxCyber/Linux-octo/tree/main/Linux%20Fundamental%2FCommands-Comparison)
+- Useful Linux CMDs/Tools: Curl, wget etc [go](https://github.com/IOxCyber/Linux-octo/tree/main/Linux%20Fundamental%2FCommands-Comparison)
 
 - DAST-SAST-IAST-RCA [Info](https://github.com/IOxCyber/Ultimate-Cybersecurity-Guide_UCG/blob/main/Security-Insights/Common%20Knowledge/DAST-SAST-IAST-RCA.md)
 - CIA-Concepts [Info](https://github.com/IOxCyber/CyberEssentials/blob/main/Basic-GRC-Concepts/Security_Frameworks/CIA-TriadsAND-Vul-Risk-Threat.md)
