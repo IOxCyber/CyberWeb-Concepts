@@ -27,11 +27,9 @@
 - Moreover, Move away from Hosts entirely using Containers using Docker, Pods using Kubernetes.
 
 
-## 6. 
+---
 
-
-
-
+```
 CI/CD = Process that automates build, Integrate, test, and deploy steps.
 
 CI = Merge & Test code automatically (on GitHub/GitLab).
@@ -41,6 +39,6 @@ CD = Package & Deploy code to production (e.g., server, Play Store).
 GitHub/GitLab = Code repo + CI/CD trigger, not the final delivery.
 
 Play Store = Final release platform for end-users.
-
+```
 
 > “Git is the garage → CI/CD is the mechanic → Play Store is the showroom.”
