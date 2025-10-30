@@ -11,7 +11,7 @@
 - Unit(smaller parts testing), Integration (how the small parts work together), Security Testing(SAST/Source Code Review, DAST By exe code)
 - Penetration Testing (Manually Testing application for Contextual Vulnerabilities)
 
-## 4. Continuous Integration and Delivery:
+## 4. Continuous Integration and Continuous Delivery `CI/CD`:
 - An Automated process to compile, build, integrate & deploy new software features.
 - It has these ACTIONS `Starting Trigger, Building Actions, Testing Actions, Deployment Actions, Delivery Actions`.
 
@@ -20,4 +20,24 @@
 - Tools: Build Agents(GitHub), Runner Application (Gitlab), More Complex (Jenkins)
 
 
-## 5. 
+## 5. Environments: Infrastructure
+- Dev < UAT (User Acceptance Testing) < PreProd < Prod < DR/HA (Diaster Recovery or High Availability)
+> Security & Stability is Lowest @Dev & Highest @prod/DR/HA Environments.
+
+## 6. 
+
+
+
+
+CI/CD = Process that automates build, Integrate, test, and deploy steps.
+
+CI = Merge & Test code automatically (on GitHub/GitLab).
+
+CD = Package & Deploy code to production (e.g., server, Play Store).
+
+GitHub/GitLab = Code repo + CI/CD trigger, not the final delivery.
+
+Play Store = Final release platform for end-users.
+
+
+> “Git is the garage → CI/CD is the mechanic → Play Store is the showroom.”
