@@ -5,6 +5,6 @@
 
 ## 2. Dependency Management: Manage library & SDKs
 - Eg. JFrog Artifactory, Azure Artufactory
-- 3rd Party Lib/Dependencies eg. jQuery, Log4J
+- 3rd Party Lib/Dependencies eg. jQuery, Log4J, PiPy (python public dependency repo)
 
 ## 3. 
