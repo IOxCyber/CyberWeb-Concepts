@@ -12,4 +12,12 @@
 - Penetration Testing (Manually Testing application for Contextual Vulnerabilities)
 
 ## 4. Continuous Integration and Delivery:
-- 
+- An Automated process to compile, build, integrate & deploy new software features.
+- It has these ACTIONS `Starting Trigger, Building Actions, Testing Actions, Deployment Actions, Delivery Actions`.
+
+> A Build Orchestrator directs the various agents to perform the ACTIONS of the CI/CD pipelines as required.
+
+- Tools: Build Agents(GitHub), Runner Application (Gitlab), More Complex (Jenkins)
+
+
+## 5. 
