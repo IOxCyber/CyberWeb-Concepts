@@ -23,6 +23,9 @@
 ## 5. Environments: Infrastructure
 - Dev < UAT (User Acceptance Testing) < PreProd < Prod < DR/HA (Diaster Recovery or High Availability)
 > Security & Stability is Lowest @Dev & Highest @prod/DR/HA Environments.
+- These Env can be VMs thru tools Terraform, Vagrant.
+- Moreover, Move away from Hosts entirely using Containers using Docker, Pods using Kubernetes.
+
 
 ## 6. 
 
