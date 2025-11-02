@@ -1,6 +1,5 @@
 ## 1. Source Code Storage: `To store code`
 - eg. GitHub Repos via Git, SVN (TortoiseSVN & Apache SVN)
-- GitLab (to host your own git server)
 > Gittyleaks to scan the commits of a repo for sensitive information.
 
 ## 2. Dependency Management: `Manage library & SDKs`
@@ -42,3 +41,5 @@ Play Store = Final release platform for end-users.
 ```
 
 > “Git is the garage → CI/CD is the mechanic → Play Store is the showroom.”
+
+- GitLab: GitLab is a full DevSecOps platform. It provides the code repository, but also includes its own built-in tools for Continuous Integration/Continuous Delivery (CI/CD), issue tracking, and security scanning (like SCA), all in one package. When an external tool integrates with GitLab, it's connecting to this unified platform, which can be either the public GitLab.com service or a self-hosted instance.
