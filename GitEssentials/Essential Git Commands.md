@@ -1,6 +1,6 @@
 ## ⚙️ Essential Git Commands (Local Repository Workflow)
 
-The local workflow involves three main stages: the **Working Directory** (your files), the **Staging Area** (files marked for the next commit), and the **Local Repository** (your saved history).
+- The local workflow involves three main stages: the **Working Directory** (your files), the **Staging Area** (files marked for the next commit), and the **Local Repository** (your saved history).
 
 | Category | Command | Syntax Example | Usage |
 | :--- | :--- | :--- | :--- |
