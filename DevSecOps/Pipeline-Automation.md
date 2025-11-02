@@ -17,7 +17,7 @@
 
 > A Build Orchestrator directs the various agents to perform the ACTIONS of the CI/CD pipelines as required.
 
-- Tools: Build Agents(GitHub), Runner Application (Gitlab), More Complex (Jenkins)
+- Tools: Build Agents(GitHub), Runner Application (Gitlab), More Complex (Jenkins), CircleCI(Easy) etc
 
 
 ## 5. Environments: Infrastructure
