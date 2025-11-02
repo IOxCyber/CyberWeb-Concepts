@@ -1,19 +1,36 @@
 ## DevSecOps Lifecycle:
+
+| **Stage**                             | **Purpose (What)**                                  | **Why (Use)**                                            | **Tools & Technologies Used**                                  | **Security Tools & Technologies Used**                                                                  |
+| ------------------------------------- | --------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **1. Code & Commit**                  | Develop and version control secure code.            | Embed secure coding & scanning early.                    | Git, GitHub, GitLab, Bitbucket, VS Code, IntelliJ              | SonarQube (SAST), Checkmarx, Semgrep, Bandit, Brakeman, Snyk Code, CodeQL                               |
+| **2. Build & Integrate (CI)**         | Automate build, compile & dependency management.    | Detect vulnerabilities in dependencies & builds.         | Jenkins, GitLab CI/CD, GitHub Actions, CircleCI, Maven, Gradle | OWASP Dependency-Check, Trivy, Anchore, Clair, Snyk, JFrog Xray                                         |
+| **3. Test (Functional + Security)**   | Validate code quality, logic & app security.        | Identify runtime & logic-based vulnerabilities.          | Selenium, JUnit, PyTest, Postman, Cucumber                     | OWASP ZAP (DAST), Burp Suite, Arachni, Netsparker, Wapiti, Nessus                                       |
+| **4. Deploy (CD + IaC)**              | Automate infrastructure & app deployment.           | Ensure secure provisioning & configuration.              | Terraform, Ansible, Puppet, Chef, Docker, Kubernetes, Helm     | Checkov (IaC Scanning), Terrascan, TFSec, Aqua Security, Twistlock, Sysdig Secure, OPA (Policy as Code) |
+| **5. Operate (Runtime Security)**     | Manage infra & app operations securely.             | Detect misconfigurations & runtime threats.              | Kubernetes, Docker, AWS, Azure, GCP, OpenShift                 | Falco, AppArmor, SELinux, Sysmon, OSQuery, CrowdStrike Falcon, Wazuh                                    |
+| **6. Monitor (Logs + Observability)** | Collect logs, monitor metrics & alert on anomalies. | Detect attacks, performance drops & incidents.           | Prometheus, Grafana, ELK Stack, Splunk, Dynatrace, Datadog     | SIEM (Splunk Enterprise Security, QRadar, Wazuh), IDS/IPS, CloudTrail, GuardDuty                        |
+| **7. Feedback & Improve**             | Feed insights back for continuous hardening.        | Continuous security enhancement & vulnerability closure. | Jira, Confluence, ServiceNow, Git Issues, Slack Integrations   | DefectDojo, Security Scorecards, Threat Modeling Tools, RiskSense                                       |
+
 ---
 
-## 🔐 **DevSecOps Lifecycle: Code → Build → Test → Deploy → Operate → Monitor → Improve**
+### 💡 **Security Integration Flow**
 
-| **Stage**                         | **Purpose (What)**                                 | **Why (Use)**                                             | **Tools & Technologies (Examples)**                                                                                         | **Extras (Alternatives / Similar)**                    |
-| --------------------------------- | -------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| **1. Code & Commit**              | Write and version code securely.                   | Embed security early in SDLC.                             | 🧩 *Git*, *GitHub*, *GitLab*, *Bitbucket*, *SonarQube (SAST)*, *Checkmarx*, *Semgrep*, *Bandit (Python)*, *Brakeman (Ruby)* | *Snyk Code*, *Veracode*, *CodeQL*, *Fortify SCA*       |
-| **2. Build & Integrate (CI)**     | Automate code compilation and dependency scanning. | Catch build-time vulnerabilities.                         | ⚙️ *Jenkins*, *GitLab CI/CD*, *GitHub Actions*, *CircleCI*, *TravisCI*                                                      | *Azure DevOps*, *Bamboo*, *TeamCity*                   |
-| **Security in Build**             | Integrate dependency and image scanning.           | Detect known CVEs in dependencies.                        | 🧱 *OWASP Dependency-Check*, *Snyk*, *Anchore*, *Trivy*, *Clair*, *JFrog Xray*                                              | *Grype*, *BlackDuck*, *Whitesource*                    |
-| **3. Test (Security + Quality)**  | Validate functionality + security of builds.       | Ensure application meets functional & security baselines. | 🧪 *JUnit*, *Selenium*, *PyTest*, *Postman*, *BurpSuite (DAST)*, *OWASP ZAP*, *Arachni*, *Nessus*                           | *Acunetix*, *Netsparker*, *Wapiti*                     |
-| **4. Deploy (CD + IaC)**          | Release code securely to environments.             | Automate secure infra provisioning.                       | 🚀 *Terraform*, *Ansible*, *Puppet*, *Chef*, *Helm*, *Kubernetes*, *Docker*, *Vault*                                        | *Pulumi*, *SaltStack*, *OpenShift*, *ArgoCD*, *FluxCD* |
-| **Security in Deploy**            | Scan container images + enforce policies.          | Prevent vulnerable containers from being deployed.        | 🛡️ *Aqua Security*, *Twistlock*, *NeuVector*, *Sysdig Secure*                                                              | *Kyverno*, *OPA (Open Policy Agent)*                   |
-| **5. Operate (Runtime Security)** | Ensure security of running apps & infra.           | Detect runtime attacks or drift.                          | 🧠 *Falco*, *AppArmor*, *SELinux*, *Sysmon*, *OSQuery*                                                                      | *Wazuh*, *CrowdStrike Falcon*, *Datadog Security*      |
-| **6. Monitor (Logs + Metrics)**   | Track performance, logs, and threats.              | Observe anomalies, detect breaches early.                 | 📊 *Prometheus*, *Grafana*, *ELK Stack (Elasticsearch, Logstash, Kibana)*, *Splunk*, *Dynatrace*                            | *Graylog*, *Datadog*, *New Relic*, *Sumo Logic*        |
-| **7. Feedback & Improve**         | Feed insights back to dev teams.                   | Continuous improvement & posture hardening.               | 🔁 *Jira*, *Confluence*, *ServiceNow*, *Security Scorecards*, *DefectDojo*                                                  | *GitHub Security Dashboard*, *RiskSense*               |
+```
+Code → (SAST) → Build → (Dependency Scan) → Test → (DAST) → Deploy → (IaC Scan + Policy Check) → Operate → (Runtime Security) → Monitor → (SIEM + Alerts) → Feedback → Improve
+```
+
+---
+
+### 🧠 **Key Security Testing Focus**
+
+| **Phase** | **Primary Security Test** | **Purpose**                                |
+| --------- | ------------------------- | ------------------------------------------ |
+| Code      | SAST                      | Detect insecure code patterns.             |
+| Build     | Dependency Scan           | Identify vulnerable libraries/packages.    |
+| Test      | DAST + API Security       | Find runtime & logical vulnerabilities.    |
+| Deploy    | IaC & Container Security  | Prevent misconfigurations and weak images. |
+| Operate   | Runtime Protection        | Detect live attacks or anomaly behavior.   |
+| Monitor   | Threat Detection & SIEM   | Correlate, alert, and analyze incidents.   |
+| Improve   | Security Analytics        | Enhance policies & fix root causes.        |
 
 ---
 
